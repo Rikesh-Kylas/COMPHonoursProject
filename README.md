@@ -4,7 +4,9 @@ Digital Watermarking using LSB - COMP700 Honours Project by 218005822 (RIkesh Ky
 ------------ Kaleidoscope Digital Watermarking System Execution Steps ---------------
 
 Welcome to the step by step guide on how to operate this software:
+
 ------------------------------------- E X E C U T I O N ----------------------------------------
+
 * Multiple files and an exe file:
  
 1) Simply locate the folder in which all program files, dependencies and python files are located.
@@ -38,7 +40,7 @@ must be stored in the same file directory/path as this .py file for successful u
 
 This software will NOT run in an IDE that does NOT support UI files and GUI execution (such as colab)
 
------------------------------------ G U I   R U N T I M E --------------------------------------------
+----------------------------------- G U I     R U N T I M E --------------------------------------------
 
 1) As a new user, you should locate the Sign Up button in the bottom right corner of the GUI interface
 and click it to be redirected to a Sign Up page.
