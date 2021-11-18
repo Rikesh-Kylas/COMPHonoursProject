@@ -31,6 +31,9 @@ NOTE: All image files for digitally watermarking, watermark extraction as well a
 must be stored in the same file directory/path as this .py file for successful usage.
 
 # Dataset included as folder KDb with submission (small dataset - no link required to download)
+# Sample account details for quick testing:
+# Username: content creator
+# Password: 0123456789012
 ------------------------------------------------------------------------------------------------------
 This software will NOT run in an IDE that does NOT support UI files and GUI execution (such as colab)
 ----------------------------------- G U I   R U N T I M E --------------------------------------------
