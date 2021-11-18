@@ -1,6 +1,7 @@
 # COMPHonoursProject
 Digital Watermarking using LSB - COMP700 Honours Project by 218005822 (RIkesh Kylas)
------------- Kaleidoscope Digital Watermarking System Execution Steps ------------------------------------------
+
+------------ Kaleidoscope Digital Watermarking System Execution Steps ---------------
 
 Welcome to the step by step guide on how to operate this software:
 ------------------------------------- E X E C U T I O N ----------------------------------------
