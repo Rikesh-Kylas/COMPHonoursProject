@@ -1,0 +1,476 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>frmEncodeDecode</class>
+ <widget class="QDialog" name="frmEncodeDecode">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>702</width>
+    <height>577</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Digital Watermarking System - Login </string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(54, 54, 54);</string>
+  </property>
+  <widget class="QLabel" name="lblWatermrk">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>20</y>
+     <width>311</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>26</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Welcome:</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="gboxDecode">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>90</y>
+     <width>281</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string> Image Decoder (Watermark retrieval) </string>
+   </property>
+   <widget class="QLabel" name="lblDecodeInstruc">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>261</width>
+      <height>191</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To begin watermark extraction, You will need to:&lt;/p&gt;&lt;p&gt;- Ensure this input image has been water-&lt;/p&gt;&lt;p&gt;marked by this software (to correctly verify &lt;/p&gt;&lt;p&gt;content creators within this software ONLY)&lt;/p&gt;&lt;p&gt;- Hence image should be&lt;span style=&quot; font-style:italic;&quot;&gt; .png&lt;/span&gt; file and should&lt;/p&gt;&lt;p&gt;be placed in the source folder (same as program)&lt;/p&gt;&lt;p&gt;- Lastly input the exact name of your image in the&lt;/p&gt;&lt;p&gt;folder:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="decodeName">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>220</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Don't forget to type in .png</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblEnterHere1_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>190</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter file name (eg. &lt;span style=&quot; font-style:italic;&quot;&gt;encoded.png&lt;/span&gt;):&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="btnDecode">
+    <property name="geometry">
+     <rect>
+      <x>40</x>
+      <y>260</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(244, 255, 240);
+color: rgb(255, 255, 255);
+border-color: rgb(244, 255, 217);</string>
+    </property>
+    <property name="text">
+     <string>DECODE WATERMARK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblDMsg">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>300</y>
+      <width>261</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="gboxEncode">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>90</y>
+     <width>391</width>
+     <height>331</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string> Image Encoder (Watermark your content) </string>
+   </property>
+   <widget class="QLabel" name="lblEncodeInstruc">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>371</width>
+      <height>171</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;To begin the Digital Watermarking process, we will need to take your &lt;/p&gt;&lt;p&gt;unique Kaleidescope (seen below) and hide it behind your input image.&lt;/p&gt;&lt;p&gt;You will need to:&lt;/p&gt;&lt;p&gt;- Ensure your input image is in &lt;span style=&quot; font-weight:600;&quot;&gt;jpg&lt;/span&gt; format (.jpg)&lt;/p&gt;&lt;p&gt;(if your image is not a jpg this will not work, please convert)&lt;/p&gt;&lt;p&gt;- Place your input image in the folder where this program is located&lt;/p&gt;&lt;p&gt;- Lastly input the exact name of your image in the folder below:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="encodeName">
+    <property name="geometry">
+     <rect>
+      <x>200</x>
+      <y>190</y>
+      <width>181</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+     </font>
+    </property>
+    <property name="toolTip">
+     <string>Don't forget to type in .jpg</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="clearButtonEnabled">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblEnterHere1">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>190</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Enter file name (eg. &lt;span style=&quot; font-style:italic;&quot;&gt;my_pic.jpg&lt;/span&gt;):&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblPass">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>220</y>
+      <width>371</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Once all requirements are met, click here to start Encoding:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="btnEncode">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>260</y>
+      <width>211</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(244, 255, 240);
+color: rgb(255, 255, 255);
+border-color: rgb(244, 255, 217);</string>
+    </property>
+    <property name="text">
+     <string>ENCODE WATERMARK</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lblEMsg">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>300</y>
+      <width>361</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="gboxNote">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>420</y>
+     <width>391</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>NOTE: </string>
+   </property>
+   <widget class="QLabel" name="lblNote">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>371</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;- All Digitally Watermarked images as well as extracted Watermarks are&lt;/p&gt;&lt;p&gt;stored in the same source folder where input images are placed.&lt;/p&gt;&lt;p&gt;- Image dimensions may vary, but be careful when decoding!&lt;/p&gt;&lt;p&gt;- If decoded images are not a Kaleidoscope or collage of&lt;/p&gt;&lt;p&gt;Kaleidoscope, owner recognition will not be possible.&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QGroupBox" name="gBoxDamagedWatermark">
+   <property name="geometry">
+    <rect>
+     <x>410</x>
+     <y>420</y>
+     <width>281</width>
+     <height>151</height>
+    </rect>
+   </property>
+   <property name="title">
+    <string>Owner Identification </string>
+   </property>
+   <widget class="QLabel" name="lblDamagedInstruc">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>20</y>
+      <width>251</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Use this tool to identify the owner of the &lt;/p&gt;&lt;p&gt;extracted watermark obtained, even if the &lt;/p&gt;&lt;p&gt;watermark may be partially cropped/damged. &lt;/p&gt;&lt;p&gt;Content creator/owner may still be identified, &lt;/p&gt;&lt;p&gt;Try it out:&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+    </property>
+   </widget>
+   <widget class="QCommandLinkButton" name="btnDecode_2">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>110</y>
+      <width>211</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Segoe UI</family>
+      <pointsize>12</pointsize>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgb(244, 255, 240);
+color: rgb(255, 255, 255);
+border-color: rgb(244, 255, 217);</string>
+    </property>
+    <property name="text">
+     <string>VERIFY OWNER</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QCommandLinkButton" name="btnHelp">
+   <property name="geometry">
+    <rect>
+     <x>520</x>
+     <y>30</y>
+     <width>171</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>WhatsThisCursor</cursorShape>
+   </property>
+   <property name="text">
+    <string>View My Kaleidoscope</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="lblWatermrk_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Segoe UI</family>
+     <pointsize>26</pointsize>
+     <weight>75</weight>
+     <bold>true</bold>
+     <underline>true</underline>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>Welcome:</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
