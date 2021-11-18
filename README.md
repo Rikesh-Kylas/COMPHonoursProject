@@ -35,7 +35,9 @@ must be stored in the same file directory/path as this .py file for successful u
 # Username: content creator
 # Password: 0123456789012
 ------------------------------------------------------------------------------------------------------
+
 This software will NOT run in an IDE that does NOT support UI files and GUI execution (such as colab)
+
 ----------------------------------- G U I   R U N T I M E --------------------------------------------
 
 1) As a new user, you should locate the Sign Up button in the bottom right corner of the GUI interface
