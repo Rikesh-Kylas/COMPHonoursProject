@@ -7,24 +7,25 @@ Welcome to the step by step guide on how to operate this software:
 
 ------------------------------------- E X E C U T I O N ----------------------------------------
 
-* Multiple files and an exe file:
+* Multiple files (Dependancies) and a Single exe file:
  
-1) Simply locate the folder in which all program files, dependencies and python files are located.
+1) Simply extract and locate the folder in which all program files, dependencies and python files 
+   are located.
      (Ensure the folder with these operation files is unzipped and stored locally)
-2) Locate the DigitalWatermarkingSystem.exe file in the root of this file and simply double click
+     
+2) Locate the DigitalWatermarking.exe file in the root of this file and simply double click
 to execute this program. 
+
 3) After a short wait, you will then be prompted with the GUI login screen of this system in which
 you can follow the User guide manual (provided with screenshots and instruction steps in sequence)
-provided to learn how everything works with visual examples.
+provided to learn how everything works with visual examples
+OR Skip below to the 'GUI RUNTIME' section for quick run instructions.
 
-* Single executable file:
-
-1) Double click the provided executable file (DigitalWatermarkingSystem.exe)
 
 NOTE: All image files for digitally watermarking, watermark extraction as well as user identification
 must be stored in the same file directory/path as this .exe file for successful usage.
 
-* Python:
+* Python IDE Run:
 
 1) Open main.py using an IDE (preferrably PyCharm) and run the build, GUI will display and continue.
    (Dependancies must be in this program folder and required libraries must be installed)
